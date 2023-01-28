@@ -1,0 +1,19 @@
+{
+  "name": "sarooj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch sass/ -o css/ -r",
+    "tailwind": "npx tailwindcss -i ./src/tailwind.css -o ./css/main.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "node-sass": "^8.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
