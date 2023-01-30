@@ -1,0 +1,75 @@
+div.faq {
+  width: 100%;
+  height: auto;
+  padding: 80px 5% 100px 5%;
+  >h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 42px;
+    font-weight: 500;
+    color: #ae8649;
+    margin-bottom: 50px;
+  }
+  >div.faqItems{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    >div.singleFaq{
+      padding: 35px 25px 20px 40px;
+      width: 100%;
+      height: auto;
+      background-color: #2F2F2F;
+      margin-bottom: 10px;
+      >div.question{
+        width: 100%;
+        display: flex;
+        >div.iconQuestion{
+          width: 40px;
+          height: 100%;
+          >img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        div.textQuestion{
+          width: calc(100% - 90px);
+          height: 100%;
+          >h4{
+            line-height: 40px;
+            padding-right: 15px;
+            color: white;
+            font-size: 26px;
+            padding-left: 30px;
+            text-align: justify;
+          }
+        }
+        div.iconDirection{
+          width: 50px;
+          height: 100%;
+          text-align: left;
+          padding-top: 10px;
+          >img{
+            width: 25px;
+            height: 15px;
+            cursor: pointer;
+            display: inline-block;
+          }
+        }
+      }
+      div.answer{
+        width: calc(100% - 90px);
+        display:block;
+        margin:10px auto 0 auto;
+        padding-right: 15px;
+        padding-left: 30px;
+        >p{
+          font-size: 18px;
+          color: rgba(214, 214, 214, 1);
+          text-align: justify;
+        }
+      }
+    }
+  }
+}

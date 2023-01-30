@@ -1,0 +1,13 @@
+div.picture{
+  width: 100%;
+  height: 565px;
+  background: url("../../images/Projects/Header/close-up-designer-working-layout 1.png") no-repeat fixed;
+  background-size: cover;
+  display: flex;
+  >h1{
+    text-align: center;
+    margin: auto auto;
+    color: white;
+    font-size: 64px;
+  }
+}

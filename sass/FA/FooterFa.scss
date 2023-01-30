@@ -1,0 +1,132 @@
+footer {
+  width: 100%;
+  height: auto;
+  background-color: rgba(29, 29, 29, 1);
+  >div.footer{
+    width: 100%;
+    padding: 70px 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    >div.logoFooter{
+      width: 20%;
+      >img{
+        width: 125px;
+        height: 50px;
+        object-fit: cover;
+        margin-bottom: 10px;
+      }
+      >p{
+        color: white;
+        text-transform: capitalize;
+        text-align: right;
+        font-size: 14px;
+      }
+    }
+    div.socialFooter{
+      width:20% ;
+      >h1{
+        text-transform: capitalize;
+        font-size: 26px;
+        margin-bottom: 10px;
+        color: whitesmoke;
+      }
+      >div.SaroojSocials{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+        >a{
+          display:inline-block;
+          width: 25px;
+          height: 25px;
+          margin-left: 10px;
+        }
+      }
+    }
+    div.PhoneFooter{
+      width: 20%;
+      >h1{
+        text-transform: capitalize;
+        font-size: 26px;
+        margin-bottom: 10px;
+        color: whitesmoke;
+      }
+      >ul{
+        width: 100%;
+        list-style: none;
+        >li{
+          width: 100%;
+          height: auto;
+          margin-bottom: 10px;
+          color: white;
+        }
+      }
+    }
+    div.address{
+      width: 20%;
+      >h1{
+        text-transform: capitalize;
+        font-size: 26px;
+        margin-bottom: 10px;
+        color: whitesmoke;
+      }
+      >p{
+        color: white;
+        text-transform: capitalize;
+        text-align: right;
+        font-size: 14px;
+      }
+    }
+  }
+  div.designer{
+    width: 100%;
+    height: auto;
+    background-color: rgba(14, 14, 14, 1);
+    padding: 15px 0 35px 0;
+    text-align: center;
+    >span{
+      color: white;
+      display: block;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    >b{
+      color: white;
+      font-size: 14px;
+    }
+    >div.designerInfo{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      align-items: center;
+      margin-top: 20px;
+      >div.socialDesigner{
+        text-align: center;
+        width: 225px;
+        border-left: 1px solid whitesmoke;
+        border-right: 1px solid whitesmoke;
+        margin: 0 10px
+      }
+      >div.NumberDesigner{
+        width: 225px;
+        text-align: right;
+        >span{
+          display: block;
+          color: white;
+          text-align: right;
+        }
+      }
+      div.emailDesigner{
+        width: 225px;
+        text-align: left;
+        >span{
+          display: block;
+          text-align: left;
+          color: whitesmoke;
+        }
+      }
+    }
+  }
+}

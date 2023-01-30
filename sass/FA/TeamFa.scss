@@ -1,0 +1,65 @@
+div.team {
+  width: 100%;
+  height: auto;
+  padding: 80px 5% 100px 5%;
+  background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0),rgba(192, 160, 112, 0),rgba(182, 145, 90, 1));
+  > h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 42px;
+    font-weight: 500;
+    color: #ae8649;
+    margin-bottom: 50px;
+  }
+  >div.itemTeam{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    >div.singleTeam{
+      width: 25%;
+      margin: 0 2.5% 50px 2.5% ;
+      height: auto;
+      text-align: center;
+      >img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: inline-block;
+        object-fit: cover;
+        margin-bottom: 25px;
+      }
+      >span{
+        display: block;
+        margin-bottom: 5px;
+        font-size: 24px;
+        text-transform: capitalize;
+      }
+      b{
+        display: block;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+        font-size: 20px;
+        color:rgba(174, 134, 73, 1);
+      }
+      >p{
+        text-align: justify;
+        margin-bottom: 15px;
+      }
+      >div.TeamSocials{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        >a{
+          display: inline-block;
+          width: auto;
+          margin: 0 5px;
+          >img{
+            width:30px ;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}

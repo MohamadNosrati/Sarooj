@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+html{
+  direction: rtl;
+}
+@font-face {
+  font-face-name: "yekan_bakh_bold";
+  src: url("../../fonts/Fa/yekan-bakh/yekanBakh-bold.ttf");
+}
+@font-face {
+  font-face-name: "yekan_bakh_medium";
+  src: url("../../fonts/Fa/yekan-bakh/yekanBakh-medium.ttf");
+}
+@font-face {
+  font-face-name: "yekan_bakh_regular";
+  src: url("../../fonts/Fa/yekan-bakh/yekanBakh-regular.ttf");
+}
+@import "MenuFa";
+@import "SliderFa";
+@import "CategoryFa";
+@import "ServiceFa";
+@import "FaqFa";
+@import "TeamFa";
+@import "FooterFa";
+@import "ProjectsTopPicFa";
+@import "ProjectsFa";
+@import "DetailsFa";
+@import "BlogFa";
+@import "CommentsFa";
+@import "ContactFa";
+@import "FormFa";
+@import "LocationFa";
