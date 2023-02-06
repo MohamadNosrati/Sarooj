@@ -1,73 +1,391 @@
-div.services{
-  width: 100%;
-  height: auto;
-  padding:80px 5% 100px 5%;
-  background-color: rgba(29, 29, 29, 1);
-  >h1{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 42px;
-    font-weight: 500;
-    color: #ae8649;
-    margin-bottom: 50px;
-  }
-  >div.itemService{
+@media only screen and (min-width: 1200px){
+  div.services{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    >div.image{
-      width: 400px;
-      height: 400px;
-      >img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    height: auto;
+    padding:80px 5% 100px 5%;
+    background-color: rgba(29, 29, 29, 1);
+    >h1{
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 42px;
+      font-family: "yekan_bakh_bold";
+      color: #AE8649;
+      margin-bottom: 50px;
     }
-    div.officeServices{
-      width: calc(100% - 400px);
-      padding-right: 50px;
-      >h1{
-        color: white;
-        text-transform: capitalize;
-        font-size: 42px;
-        margin-bottom: 40px;
+    >div.itemService{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      >div.image{
+        width: 400px;
+        height: 400px;
+        >img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
-      >div.totalServices{
-        height: auto;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        flex-flow: row wrap;
-        >div.singleService{
-          display: flex;
-          width: 45%;
+      div.officeServices{
+        width: calc(100% - 400px);
+        padding-right: 50px;
+        >h1{
+          color: #F1F1F2;
+          text-transform: capitalize;
+          font-size: 42px;
+          margin-bottom: 20px;
+          font-family: "yekan_bakh_regular";
+        }
+        >div.totalServices{
           height: auto;
-          margin-bottom: 50px;
-          >div.iconService{
-            width: auto;
-            height: 100%;
-            >img{
-              width: 40px;
-              height: 40px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          flex-flow: row wrap;
+          >div.singleService{
+            display: flex;
+            width: 45%;
+            height: auto;
+            margin-bottom: 35px;
+            >div.iconService{
+              width: auto;
+              height: 100%;
+              >img{
+                width: 40px;
+                height: 40px;
+              }
+            }
+            div.textService{
+              width:calc(100% - 40px);
+              height: auto;
+              padding-right:15px ;
+              padding-top: 5px;
+              >h3{
+                text-transform: capitalize;
+                color: #FCFCFD;
+                font-size: 32px;
+                font-family: "yekan_bakh_bold";
+              }
+              >p{
+                color: #D6D6D6;
+                text-align: justify;
+                font-size: 16px;
+                font-family: "yekan_bakh_regular";
+              }
             }
           }
-          div.textService{
-            width:calc(100% - 40px);
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+  div.services{
+    width: 100%;
+    height: auto;
+    padding:60px 5% 80px 5%;
+    background-color: rgba(29, 29, 29, 1);
+    >h1{
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 38px;
+      font-family: "yekan_bakh_bold";
+      color: #AE8649;
+      margin-bottom: 50px;
+    }
+    >div.itemService{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      >div.image{
+        width: 300px;
+        height: 300px;
+        >img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      div.officeServices{
+        width: calc(100% - 300px);
+        padding-right: 25px;
+        >h1{
+          color: #F1F1F2;
+          text-transform: capitalize;
+          font-size: 30px;
+          margin-bottom: 10px;
+          font-family: "yekan_bakh_regular";
+        }
+        >div.totalServices{
+          height: auto;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          flex-flow: row wrap;
+          >div.singleService{
+            display: flex;
+            width: 45%;
             height: auto;
-            padding-right:15px ;
-            padding-top: 10px;
-            >h3{
-              text-transform: capitalize;
-              color: whitesmoke;
-              font-size: 32px;
-              font-weight: 700;
+            margin-bottom: 25px;
+            >div.iconService{
+              width: auto;
+              height: 100%;
+              >img{
+                width: 30px;
+                height: 30px;
+              }
             }
-            >p{
-              margin-top: 10px;
-              color: rgba(214, 214, 214, 1);;
-              text-align: justify;
-              font-size: 16px;
+            div.textService{
+              width:calc(100% - 40px);
+              height: auto;
+              padding-right:15px ;
+              >h3{
+                text-transform: capitalize;
+                color: #FCFCFD;
+                font-size: 26px;
+                font-family: "yekan_bakh_bold";
+              }
+              >p{
+                color: #D6D6D6;
+                text-align: justify;
+                font-size: 14px;
+                font-family: "yekan_bakh_regular";
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+  div.services{
+    width: 100%;
+    height: auto;
+    padding:50px 5% 70px 5%;
+    background-color: rgba(29, 29, 29, 1);
+    >h1{
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 34px;
+      font-family: "yekan_bakh_bold";
+      color: #AE8649;
+      margin-bottom: 10px;
+    }
+    >div.itemService{
+      width: 100%;
+      >div.image{
+        margin: 25px auto;
+        width: 400px;
+        height: 400px;
+        >img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      div.officeServices{
+        width: 100%;
+        padding-right: 25px;
+        >h1{
+          text-align: center;
+          color: #F1F1F2;
+          text-transform: capitalize;
+          font-size: 30px;
+          margin-bottom: 25px;
+          font-family: "yekan_bakh_regular";
+        }
+        >div.totalServices{
+          height: auto;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          flex-flow: row wrap;
+          >div.singleService{
+            display: flex;
+            width: 45%;
+            height: auto;
+            margin-bottom: 25px;
+            >div.iconService{
+              width: auto;
+              height: 100%;
+              >img{
+                width: 30px;
+                height: 30px;
+              }
+            }
+            div.textService{
+              width:calc(100% - 40px);
+              height: auto;
+              padding-right:15px ;
+              >h3{
+                text-transform: capitalize;
+                color: #FCFCFD;
+                font-size: 26px;
+                font-family: "yekan_bakh_bold";
+              }
+              >p{
+                color: #D6D6D6;
+                text-align: justify;
+                font-size: 14px;
+                font-family: "yekan_bakh_regular";
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+  div.services{
+    width: 100%;
+    height: auto;
+    padding:50px 5% 70px 5%;
+    background-color: rgba(29, 29, 29, 1);
+    >h1{
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 34px;
+      font-family: "yekan_bakh_bold";
+      color: #AE8649;
+      margin-bottom: 10px;
+    }
+    >div.itemService{
+      width: 100%;
+      >div.image{
+        margin: 25px auto;
+        width: 400px;
+        height: 400px;
+        >img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      div.officeServices{
+        width: 100%;
+        padding-right: 25px;
+        >h1{
+          text-align: center;
+          color: #F1F1F2;
+          text-transform: capitalize;
+          font-size: 30px;
+          margin-bottom: 25px;
+          font-family: "yekan_bakh_regular";
+        }
+        >div.totalServices{
+          height: auto;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          flex-flow: row wrap;
+          >div.singleService{
+            display: flex;
+            width: 75%;
+            height: auto;
+            margin-bottom: 25px;
+            >div.iconService{
+              width: auto;
+              height: 100%;
+              >img{
+                width: 30px;
+                height: 30px;
+              }
+            }
+            div.textService{
+              width:calc(100% - 40px);
+              height: auto;
+              padding-right:15px ;
+              >h3{
+                text-transform: capitalize;
+                color: #FCFCFD;
+                font-size: 26px;
+                font-family: "yekan_bakh_bold";
+              }
+              >p{
+                color: #D6D6D6;
+                text-align: justify;
+                font-size: 14px;
+                font-family: "yekan_bakh_regular";
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 576px){
+  div.services{
+    width: 100%;
+    height: auto;
+    padding:50px 2.5% 70px 2.5%;
+    background-color: rgba(29, 29, 29, 1);
+    >h1{
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 34px;
+      font-family: "yekan_bakh_bold";
+      color: #AE8649;
+      margin-bottom: 10px;
+    }
+    >div.itemService{
+      width: 100%;
+      >div.image{
+        margin: 25px auto;
+        width: 400px;
+        height: 400px;
+        >img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      div.officeServices{
+        width: 100%;
+        >h1{
+          text-align: center;
+          color: #F1F1F2;
+          text-transform: capitalize;
+          font-size: 30px;
+          margin-bottom: 25px;
+          font-family: "yekan_bakh_regular";
+        }
+        >div.totalServices{
+          height: auto;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          flex-flow: row wrap;
+          >div.singleService{
+            display: flex;
+            width: 95%;
+            height: auto;
+            margin-bottom: 25px;
+            >div.iconService{
+              width: auto;
+              height: 100%;
+              >img{
+                width: 30px;
+                height: 30px;
+              }
+            }
+            div.textService{
+              width:calc(100% - 40px);
+              height: auto;
+              padding-right:15px ;
+              >h3{
+                text-transform: capitalize;
+                color: #FCFCFD;
+                font-size: 26px;
+                font-family: "yekan_bakh_bold";
+              }
+              >p{
+                color: #D6D6D6;
+                text-align: justify;
+                font-size: 14px;
+                font-family: "yekan_bakh_regular";
+              }
             }
           }
         }

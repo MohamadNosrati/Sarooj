@@ -13,16 +13,30 @@ html{
   direction: rtl;
 }
 @font-face {
-  font-face-name: "yekan_bakh_bold";
+  font-family: "yekan_bakh_bold";
   src: url("../../fonts/Fa/yekan-bakh/yekanBakh-bold.ttf");
 }
 @font-face {
-  font-face-name: "yekan_bakh_medium";
+  font-family: "yekan_bakh_medium";
   src: url("../../fonts/Fa/yekan-bakh/yekanBakh-medium.ttf");
 }
 @font-face {
-  font-face-name: "yekan_bakh_regular";
+  font-family: "yekan_bakh_regular";
   src: url("../../fonts/Fa/yekan-bakh/yekanBakh-regular.ttf");
+}
+@font-face {
+  font-family: "futura medium bt";
+  src: url("../../fonts/En/Futura/futura medium bt.ttf");
+}
+svg{
+  transition: all 300ms linear;
+}
+.svgCommon{
+  fill: #F1F1F2;
+  transition: all 300ms linear;
+  &:hover{
+    fill: #AE8649;
+  }
 }
 @import "MenuFa";
 @import "SliderFa";
@@ -31,11 +45,11 @@ html{
 @import "FaqFa";
 @import "TeamFa";
 @import "FooterFa";
-@import "ProjectsTopPicFa";
 @import "ProjectsFa";
 @import "DetailsFa";
 @import "BlogFa";
 @import "CommentsFa";
 @import "ContactFa";
 @import "FormFa";
-@import "LocationFa";
+@import "preloader";
+@import "DetailsBf";

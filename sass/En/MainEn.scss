@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+html{
+  direction: ltr;
+}
+@font-face {
+  font-family: "Akshar Bold";
+  src: url("../../fonts/En/Akshar/static/Akshar-Bold.ttf");
+}
+@font-face {
+  font-family: "Akshar Medium";
+  src: url("../../fonts/En/Akshar/static/Akshar-Medium.ttf");
+}
+@font-face {
+  font-family: "Akshar Light";
+  src: url("../../fonts/En/Akshar/static/Akshar-Light.ttf");
+}
+@font-face {
+  font-family: "Akshar Regular";
+  src: url("../../fonts/En/Akshar/static/Akshar-Regular.ttf");
+}
+@font-face {
+  font-family: "Akshar SemiBold";
+  src: url("../../fonts/En/Akshar/static/Akshar-SemiBold.ttf");
+}
+@font-face {
+  font-family: "futura medium bt";
+  src: url("../../fonts/En/Futura/futura medium bt.ttf");
+}
+svg{
+  transition: all 300ms linear;
+}
+.svgCommon{
+  fill: #F1F1F2;
+  transition: all 300ms linear;
+  &:hover{
+    fill: #AE8649;
+  }
+}
+@import "ProjectsEn";
+@import "DetailsEn";
+@import "MenuEn";
+@import "SliderEn";
+@import "ServiceEn";
+@import "CategoryEn";
+@import "FaqEn";
+@import "TeamEn";
+@import "FooterEn";
+@import "BlogEn";
+@import "CommentsEn";
+@import "ContactEn";
+@import "FormEn";
+@import "DetailsBfEn";
+//@import "ServiceFa";
+//@import "FaqFa";
+//@import "TeamFa";
+//@import "FooterFa";
+//@import "DetailsBf";
+//@import "ProjectsFa";
+//@import "DetailsFa";
+//@import "BlogFa";
+//@import "CommentsFa";
+//@import "ContactFa";
+//@import "FormFa";

@@ -1,62 +1,404 @@
-div.team {
-  width: 100%;
-  height: auto;
-  padding: 80px 5% 100px 5%;
-  background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0),rgba(192, 160, 112, 0),rgba(182, 145, 90, 1));
-  > h1 {
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 42px;
-    font-weight: 500;
-    color: #ae8649;
-    margin-bottom: 50px;
-  }
-  >div.itemTeam{
+@media only screen and (min-width: 1200px){
+  div.team {
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: center;
-    >div.singleTeam{
-      width: 25%;
-      margin: 0 2.5% 50px 2.5% ;
-      height: auto;
+    padding: 80px 5% 100px 5%;
+    > h1 {
       text-align: center;
-      >img{
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        display: inline-block;
-        object-fit: cover;
-        margin-bottom: 25px;
-      }
-      >span{
-        display: block;
-        margin-bottom: 5px;
-        font-size: 24px;
-        text-transform: capitalize;
-      }
-      b{
-        display: block;
-        margin-bottom: 10px;
-        text-transform: capitalize;
-        font-size: 20px;
-        color:rgba(174, 134, 73, 1);
-      }
-      >p{
-        text-align: justify;
-        margin-bottom: 15px;
-      }
-      >div.TeamSocials{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        >a{
+      text-transform: capitalize;
+      font-size: 42px;
+      font-weight: 500;
+      color: #AE8649;
+      margin-bottom: 50px;
+      font-family: yekan_bakh_bold;
+    }
+    >div.itemTeam{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      >div.singleTeam{
+        width: 25%;
+        margin: 0 2.5% 50px 2.5% ;
+        height: auto;
+        text-align: center;
+        >div.teamPic{
           display: inline-block;
-          width: auto;
-          margin: 0 5px;
+          width: 150px;
+          margin-bottom: 25px;
+          height: 150px;
+          border-radius: 50%;
+          overflow: hidden;
           >img{
-            width:30px ;
-            height: 30px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: all 300ms linear;
+            &:hover{
+              transform: scale(1.25,1.25);
+            }
+          }
+        }
+        >span{
+          display: block;
+          margin-bottom: 5px;
+          font-size: 24px;
+          text-transform: capitalize;
+          font-family: yekan_bakh_bold;
+        }
+        b{
+          display: block;
+          margin-bottom: 10px;
+          text-transform: capitalize;
+          font-size: 20px;
+          color:#AE8649;
+          font-family: yekan_bakh_bold;
+        }
+        >p{
+          text-align: center;
+          margin-bottom: 15px;
+          font-family: yekan_bakh_regular;
+        }
+        >div.TeamSocials{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          >a{
+            display: inline-block;
+            width: auto;
+            margin: 0 5px;
+            >img{
+              width:30px ;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+  div.team {
+    width: 100%;
+    height: auto;
+    padding: 80px 5% 100px 5%;
+    > h1 {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 38px;
+      font-weight: 500;
+      color: #AE8649;
+      margin-bottom: 50px;
+      font-family: yekan_bakh_bold;
+    }
+    >div.itemTeam{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      >div.singleTeam{
+        width: 25%;
+        margin: 0 2.5% 50px 2.5% ;
+        height: auto;
+        text-align: center;
+        >div.teamPic{
+          display: inline-block;
+          width: 150px;
+          margin-bottom: 25px;
+          height: 150px;
+          border-radius: 50%;
+          overflow: hidden;
+          >img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: all 300ms linear;
+            &:hover{
+              transform: scale(1.25,1.25);
+            }
+          }
+        }
+        >span{
+          display: block;
+          margin-bottom: 5px;
+          font-size: 24px;
+          text-transform: capitalize;
+          font-family: yekan_bakh_bold;
+        }
+        b{
+          display: block;
+          margin-bottom: 10px;
+          text-transform: capitalize;
+          font-size: 20px;
+          color:#AE8649;
+          font-family: yekan_bakh_bold;
+        }
+        >p{
+          text-align: center;
+          margin-bottom: 15px;
+          font-family: yekan_bakh_regular;
+          font-size: 18px;
+        }
+        >div.TeamSocials{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          >a{
+            display: inline-block;
+            width: auto;
+            margin: 0 5px;
+            >img{
+              width:30px ;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+  div.team {
+    width: 100%;
+    height: auto;
+    padding: 80px 5% 100px 5%;
+    > h1 {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 36px;
+      font-weight: 500;
+      color: #AE8649;
+      margin-bottom: 40px;
+      font-family: yekan_bakh_bold;
+    }
+    >div.itemTeam{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-flow:row wrap;
+      justify-content: center;
+      >div.singleTeam{
+        width: 40%;
+        margin: 0 2.5% 50px 2.5% ;
+        height: auto;
+        text-align: center;
+        >div.teamPic{
+          display: inline-block;
+          width: 150px;
+          margin-bottom: 25px;
+          height: 150px;
+          border-radius: 50%;
+          overflow: hidden;
+          >img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: all 300ms linear;
+            &:hover{
+              transform: scale(1.25,1.25);
+            }
+          }
+        }
+        >span{
+          display: block;
+          margin-bottom: 5px;
+          font-size: 24px;
+          text-transform: capitalize;
+          font-family: yekan_bakh_bold;
+        }
+        b{
+          display: block;
+          margin-bottom: 10px;
+          text-transform: capitalize;
+          font-size: 20px;
+          color:#AE8649;
+          font-family: yekan_bakh_bold;
+        }
+        >p{
+          text-align: center;
+          margin-bottom: 15px;
+          font-family: yekan_bakh_regular;
+          font-size: 18px;
+        }
+        >div.TeamSocials{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          >a{
+            display: inline-block;
+            width: auto;
+            margin: 0 5px;
+            >img{
+              width:30px ;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+  div.team {
+    width: 100%;
+    height: auto;
+    padding: 80px 5% 100px 5%;
+    > h1 {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 34px;
+      font-weight: 500;
+      color: #AE8649;
+      margin-bottom: 35px;
+      font-family: yekan_bakh_bold;
+    }
+    >div.itemTeam{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      >div.singleTeam{
+        width: 65%;
+        margin: 50px 0;
+        height: auto;
+        text-align: center;
+        >div.teamPic{
+          display: inline-block;
+          width: 125px;
+          margin-bottom: 25px;
+          height: 125px;
+          border-radius: 50%;
+          overflow: hidden;
+          >img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: all 300ms linear;
+            &:hover{
+              transform: scale(1.25,1.25);
+            }
+          }
+        }
+        >span{
+          display: block;
+          margin-bottom: 5px;
+          font-size: 22px;
+          text-transform: capitalize;
+          font-family: yekan_bakh_bold;
+        }
+        b{
+          display: block;
+          margin-bottom: 10px;
+          text-transform: capitalize;
+          font-size: 18px;
+          color:#AE8649;
+          font-family: yekan_bakh_bold;
+        }
+        >p{
+          font-size: 16px;
+          text-align: center;
+          margin-bottom: 15px;
+          font-family: yekan_bakh_regular;
+        }
+        >div.TeamSocials{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          >a{
+            display: inline-block;
+            width: auto;
+            margin: 0 5px;
+            >img{
+              width:30px ;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 576px){
+  div.team {
+    width: 100%;
+    height: auto;
+    padding: 40px 5% 100px 5%;
+    > h1 {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 32px;
+      font-weight: 500;
+      color: #AE8649;
+      margin-bottom: 30px;
+      font-family: yekan_bakh_bold;
+    }
+    >div.itemTeam{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      >div.singleTeam{
+        width: 90%;
+        margin: 50px 0 ;
+        height: auto;
+        text-align: center;
+        >div.teamPic{
+          display: inline-block;
+          width: 100px;
+          margin-bottom: 25px;
+          height: 100px;
+          border-radius: 50%;
+          overflow: hidden;
+          >img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: all 300ms linear;
+            &:hover{
+              transform: scale(1.25,1.25);
+            }
+          }
+        }
+        >span{
+          display: block;
+          margin-bottom: 5px;
+          font-size: 20px;
+          text-transform: capitalize;
+          font-family: yekan_bakh_bold;
+        }
+        b{
+          display: block;
+          margin-bottom: 10px;
+          text-transform: capitalize;
+          font-size: 18px;
+          color:#AE8649;
+          font-family: yekan_bakh_bold;
+        }
+        >p{
+          text-align: center;
+          margin-bottom: 15px;
+          font-family: yekan_bakh_regular;
+          font-size: 14px;
+        }
+        >div.TeamSocials{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          >a{
+            display: inline-block;
+            width: auto;
+            margin: 0 5px;
+            >img{
+              width:30px ;
+              height: 30px;
+            }
           }
         }
       }
