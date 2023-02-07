@@ -236,7 +236,7 @@
         <div class="videoProject bg-[#1D1D1D]">
             <div class="video">
                 <div class="container">
-                    <video onclick="play(event)" src="videos/video.mp4" id="video">
+                    <video onclick="play(event)" poster="images/low-angle-shot-facade-white-modern-building-blue-clear-sky.jpg" src="videos/512f73b82955f9ba72702f1b775d6fb648927453-720p.mp4" id="video">
 
                     </video>
                     <div class="controls">
@@ -265,6 +265,9 @@
                                 <path opacity="0.9" d="M20 0C8.972 0 0 8.972 0 20C0 31.028 8.972 40 20 40C31.028 40 40 31.028 40 20C40 8.972 31.028 0 20 0ZM28 28H24V20L12 28V12L24 20V12H28V28Z" fill="white"/>
                             </svg>
                         </button>
+                        <div class="rangeContainer">
+                            <input class="progress" id="volumeRange" min="0" max="100"  type="range">
+                        </div>
                         <button class="videoBtn"  onclick="fullScreen(event)">
                             <svg id="fullScreen" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.66667 2H4.66667C3.95942 2 3.28115 2.28095 2.78105 2.78105C2.28095 3.28115 2 3.95942 2 4.66667V8.66667M26 8.66667V4.66667C26 3.95942 25.719 3.28115 25.219 2.78105C24.7189 2.28095 24.0406 2 23.3333 2H19.3333M19.3333 26H23.3333C24.0406 26 24.7189 25.719 25.219 25.219C25.719 24.7189 26 24.0406 26 23.3333V19.3333M2 19.3333V23.3333C2 24.0406 2.28095 24.7189 2.78105 25.219C3.28115 25.719 3.95942 26 4.66667 26H8.66667" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>

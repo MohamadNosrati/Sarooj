@@ -9,6 +9,7 @@ const inner=document.querySelector("div.inner")
 const controls=document.querySelector("div.controls")
 const currentTime=document.getElementById("currentTime")
 const totalTime=document.getElementById("ToTalTime")
+const volumeRange=document.getElementById("volumeRange")
 // const rangeVolume=document.getElementById("rangeVolume")
 // // video.volume=rangeVolume.value/100
 // rangeVolume.addEventListener("change",(e)=>{
@@ -81,3 +82,11 @@ const rewind = (e) => {
 const forward = (e) => {
     video.currentTime = video.currentTime + ((video.duration/100) * 5)
 }
+volumeRange.addEventListener('input', function() {
+    const value = this.value;
+    this.style.background = `linear-gradient(to right, #AE8649 0%, #AE8649 ${value}%, #fff ${value}%, white 100%)`
+})
+
+volumeRange.addEventListener("change",function (e){
+    video.volume=e.currentTarget.value /100
+})

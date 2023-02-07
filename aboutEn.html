@@ -171,20 +171,20 @@
         <h1 class="dark:text-[#D6D6D6]">Get In Touch With Us</h1>
         <div class="totalContact">
             <div class="singleContact">
-                <img src="icons/about/VectorEnvelope.svg" alt="">
+                <img src="Icons/Contact/email.svg" alt="">
                 <b>Email</b>
                 <span class="dark:text-[#D6D6D6]">MohamadNosratiDev@gmail.com</span>
                 <span class="dark:text-[#D6D6D6]">MohamadNosratiDev@gmail.com</span>
             </div>
             <div class="singleContact">
-                <img src="icons/about/VectorLoc.svg" alt="">
+                <img src="Icons/Contact/location.svg" alt="">
                 <b>Address</b>
                 <p class="dark:text-[#D6D6D6]">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque doloremque esse explicabo iusto, necessitatibus nisi obcaecati, omnis perspiciatis quas qui quia quibusdam repellat soluta vero vitae voluptate voluptates voluptatibus?
                 </p>
             </div>
             <div class="singleContact">
-                <img src="icons/about/VectorPhone.svg" alt="">
+                <img src="Icons/Contact/phone.svg" alt="">
                 <b>Phone Number</b>
                 <span class="dark:text-[#D6D6D6]">+989120958305</span>
                 <span class="dark:text-[#D6D6D6]">+989120958305</span>
@@ -202,13 +202,13 @@
                 <input class="bg-[#D6D6D6] text-[#4F4F4F] dark:bg-[#1D1D1D]" name="email" type="email" placeholder="Your Email">
                 <label class="bg-[#D6D6D6] text-[#4F4F4F] dark:bg-[#1D1D1D]" for="upload">
                     <div class="label">
-                        <img src="icons/about/uploadIcon.png" alt="">
+                        <img src="Icons/Form/upload.svg" alt="">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M22.5 0C20.9961 0 20 0.996095 20 2.5V20H2.5C0.996095 20 0 20.9961 0 22.5V27.5C0 29.0039 0.996095 30 2.5 30H20V47.5C20 49.0039 20.9961 50 22.5 50H27.5C29.0039 50 30 49.0039 30 47.5V30H47.5C49.0039 30 50 29.0039 50 27.5V22.5C50 20.9961 49.0039 20 47.5 20H30V2.5C30 0.996095 29.0039 0 27.5 0H22.5Z" fill="#AE8649" fill-opacity="0.7"/>
                         </svg>
                     </div>
                 </label>
-                <input class="bg-[#D6D6D6] text-[#4F4F4F] dark:bg-[#1D1D1D]" type="file" name="photo" id="upload" />
+                <input class="bg-[#D6D6D6] text-[#4F4F4F] dark:bg-[#1D1D1D]" type="file" name="photo" id="upload" onchange="getData(this)" />
                 <textarea class="bg-[#D6D6D6] text-[#4F4F4F] dark:bg-[#1D1D1D]" name="Comment" placeholder="Message"></textarea>
                 <input type="submit" value="Send Message">
             </Form>

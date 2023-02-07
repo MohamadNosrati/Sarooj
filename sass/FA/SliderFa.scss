@@ -4,7 +4,7 @@
     height: 100vh;
     position: relative;
     >div.swiper-button-next,div.swiper-button-prev{
-      color: #4F4F4F;
+      color: #AE8649;
     }
     >.swiper-pagination {
       position: absolute;
@@ -12,6 +12,7 @@
       text-align: center;
       transition: 300ms opacity;
       z-index: 10000000;
+      bottom: 15px;
     }
     .swiper-pagination-bullet {
       width:15px ;
@@ -86,6 +87,7 @@
       text-align: center;
       transition: 300ms opacity;
       z-index: 10;
+      bottom: 15px;
     }
     .swiper-pagination-bullet {
       width:15px ;
