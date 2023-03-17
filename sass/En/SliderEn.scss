@@ -9,7 +9,6 @@
     >.swiper-pagination {
       position: absolute;
       bottom: 15px !important;
-      position: absolute;
       text-align: center;
       transition: 300ms opacity;
       z-index: 10000000;
@@ -49,6 +48,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      filter: brightness(25%);
     }
     >div.text{
       width: 80%;
@@ -69,6 +69,8 @@
         font-size: 24px;
         text-align: center;
         font-family: "futura medium bt";
+        width: 100%;
+        color: #FCFCFD;
       }
     }
   }
@@ -121,6 +123,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      filter: brightness(25%);
     }
     >div.text{
       width: 75%;
@@ -141,6 +144,8 @@
         font-size: 22px;
         text-align: center;
         font-family: "futura medium bt";
+        width: 100%;
+        color: #FCFCFD;
       }
     }
   }
@@ -161,8 +166,8 @@
       z-index: 10;
     }
     .swiper-pagination-bullet {
-      width:15px ;
-      height:15px;
+      width:12.5px ;
+      height:12.5px;
       display: inline-block;
       border-radius: 50%;
       background-color: #AE8649;
@@ -193,6 +198,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      filter: brightness(25%);
     }
     >div.text{
       width: 75%;
@@ -213,6 +219,8 @@
         font-size: 20px;
         text-align: center;
         font-family: "futura medium bt";
+        width: 100%;
+        color: #FCFCFD;
       }
     }
   }
@@ -233,12 +241,12 @@
       z-index: 10;
     }
     .swiper-pagination-bullet {
-      width:15px ;
-      height:15px;
+      width:10px ;
+      height:10px;
       display: inline-block;
       border-radius: 50%;
       background-color: #AE8649;
-      border: 3px solid #FCFCFD;
+      border: 1.5px solid #FCFCFD;
     }
   }
   .swiper-slide {
@@ -265,6 +273,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      filter: brightness(25%);
     }
     >div.text{
       width: 80%;
@@ -285,6 +294,8 @@
         font-size: 16px;
         text-align: center;
         font-family: "futura medium bt";
+        width: 100%;
+        color: #FCFCFD;
       }
     }
   }
@@ -305,12 +316,12 @@
       z-index: 10;
     }
     .swiper-pagination-bullet {
-      width:15px ;
-      height:15px;
+      width:10px ;
+      height:10px;
       display: inline-block;
       border-radius: 50%;
       background-color: #AE8649;
-      border: 3px solid #FCFCFD;
+      border: 1.5px solid #FCFCFD;
     }
   }
   .swiper-slide {
@@ -337,6 +348,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      filter: brightness(25%);
     }
     >div.text{
       width: 80%;
@@ -357,6 +369,8 @@
         font-size: 14px;
         text-align: center;
         font-family: "futura medium bt";
+        width: 100%;
+        color: #FCFCFD;
       }
     }
   }

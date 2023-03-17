@@ -12,6 +12,7 @@
   "dependencies": {
     "live-server": "^1.2.2",
     "node-sass": "^8.0.0",
+    "ol": "^7.3.0",
     "swiper": "^8.4.6"
   },
   "devDependencies": {

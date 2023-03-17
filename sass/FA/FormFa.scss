@@ -9,6 +9,7 @@
     > h4 {
       text-align: center;
       font-size: 20px;
+      font-family: yekan_bakh_bold;
     }
     >div.itemForm{
       margin:30px auto;
@@ -38,43 +39,6 @@
           color: #0E0E0E;
           padding: 0;
         }
-        label {
-          padding-top: 12px;
-          padding-right: 10px;
-          display: block;
-          cursor: pointer;
-          color: #4F4F4F;
-          margin-bottom: 20px;
-          height: 126px;
-          text-align: right;
-          position: relative;
-          font-family: yekan_bakh_regular;
-          border: 3px solid #AE8649;
-          >div.label{
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            border-radius: 10px;
-            z-index: 10;
-            right: 10px;
-            top: 10px;
-            >img{
-              width: 100%;
-              height: 100%;
-            }
-            >svg{
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%,-50%);
-            }
-          }
-        }
-        #upload {
-          display: none;
-          position: absolute;
-          z-index: -1;
-        }
         >textarea{
           display: block;
           width: 100%;
@@ -92,7 +56,16 @@
     }
     >div.socialsContact{
       margin-top: 70px;
-      >h1{
+      >div.formBg{
+        position: absolute;
+        z-index: -10;
+        width: 100%;
+        height: 440px;
+        bottom: 200px;
+        background: url("../../Icons/Form/bgsvg.svg") no-repeat center center;
+        background-size: cover;
+      }
+      >h4{
         text-transform: capitalize;
         font-size:46px ;
         margin-bottom: 30px;
@@ -108,7 +81,7 @@
           width: 50px;
           height: 50px;
           margin: 0 12.5px;
-          >img{
+          >svg{
             width: 100%;
             height: 100%;
           }
@@ -138,6 +111,7 @@
     > h4 {
       text-align: center;
       font-size: 20px;
+      font-family: yekan_bakh_bold;
     }
     >div.itemForm{
       margin:30px auto;
@@ -167,43 +141,6 @@
           color: #0E0E0E;
           padding: 0;
         }
-        label {
-          padding-top: 12px;
-          padding-right: 10px;
-          display: block;
-          cursor: pointer;
-          color: #4F4F4F;
-          margin-bottom: 20px;
-          height: 126px;
-          text-align: right;
-          position: relative;
-          font-family: yekan_bakh_regular;
-          border: 3px solid #AE8649;
-          >div.label{
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            border-radius: 10px;
-            z-index: 10;
-            right: 10px;
-            top: 10px;
-            >img{
-              width: 100%;
-              height: 100%;
-            }
-            >svg{
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%,-50%);
-            }
-          }
-        }
-        #upload {
-          display: none;
-          position: absolute;
-          z-index: -1;
-        }
         >textarea{
           display: block;
           width: 100%;
@@ -220,8 +157,17 @@
       }
     }
     >div.socialsContact{
-      margin-top: 70px;
-      >h1{
+      margin-top: 60px;
+      >div.formBg{
+        position: absolute;
+        z-index: -10;
+        width: 100%;
+        height: 440px;
+        bottom: 175px;
+        background: url("../../Icons/Form/bgsvg.svg") no-repeat center center;
+        background-size: cover;
+      }
+      >h4{
         text-transform: capitalize;
         font-size:46px ;
         margin-bottom: 30px;
@@ -234,10 +180,10 @@
         justify-content: center;
         >a{
           display: block;
-          width: 50px;
-          height: 50px;
+          width: 47.5px;
+          height: 47.5px;
           margin: 0 12.5px;
-          >img{
+          >svg{
             width: 100%;
             height: 100%;
           }
@@ -266,7 +212,8 @@
     font-family: yekan_bakh_medium;
     > h4 {
       text-align: center;
-      font-size: 20px;
+      font-size: 18px;
+      font-family: yekan_bakh_bold;
     }
     >div.itemForm{
       margin:30px auto;
@@ -296,43 +243,6 @@
           color: #0E0E0E;
           padding: 0;
         }
-        label {
-          padding-top: 12px;
-          padding-right: 10px;
-          display: block;
-          cursor: pointer;
-          color: #4F4F4F;
-          margin-bottom: 20px;
-          height: 126px;
-          text-align: right;
-          position: relative;
-          font-family: yekan_bakh_regular;
-          border: 3px solid #AE8649;
-          >div.label{
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            border-radius: 10px;
-            z-index: 10;
-            right: 10px;
-            top: 10px;
-            >img{
-              width: 100%;
-              height: 100%;
-            }
-            >svg{
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%,-50%);
-            }
-          }
-        }
-        #upload {
-          display: none;
-          position: absolute;
-          z-index: -1;
-        }
         >textarea{
           display: block;
           width: 100%;
@@ -350,7 +260,16 @@
     }
     >div.socialsContact{
       margin-top: 50px;
-      >h1{
+      >div.formBg{
+        position: absolute;
+        z-index: -10;
+        width: 100%;
+        height: 440px;
+        bottom: 150px;
+        background: url("../../Icons/Form/bgsvg.svg") no-repeat center center;
+        background-size: cover;
+      }
+      >h4{
         text-transform: capitalize;
         font-size:40px ;
         margin-bottom: 25px;
@@ -363,10 +282,10 @@
         justify-content: center;
         >a{
           display: block;
-          width: 50px;
-          height: 50px;
+          width: 45px;
+          height: 45px;
           margin: 0 12.5px;
-          >img{
+          >svg{
             width: 100%;
             height: 100%;
           }
@@ -376,7 +295,7 @@
   }
   div.location{
     width: 100%;
-    height: 350px;
+    height: 400px;
     >iframe{
       width: 100%;
       height: 100%;
@@ -395,7 +314,8 @@
     font-family: yekan_bakh_medium;
     > h4 {
       text-align: center;
-      font-size: 20px;
+      font-size: 18px;
+      font-family: yekan_bakh_bold;
     }
     >div.itemForm{
       margin:30px auto;
@@ -426,43 +346,6 @@
           color: #0E0E0E;
           padding: 0;
         }
-        label {
-          padding-top: 12px;
-          padding-right: 10px;
-          display: block;
-          cursor: pointer;
-          color: #4F4F4F;
-          margin-bottom: 20px;
-          height: 126px;
-          text-align: right;
-          position: relative;
-          font-family: yekan_bakh_regular;
-          border: 3px solid #AE8649;
-          >div.label{
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            border-radius: 10px;
-            z-index: 10;
-            right: 10px;
-            top: 10px;
-            >img{
-              width: 100%;
-              height: 100%;
-            }
-            >svg{
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%,-50%);
-            }
-          }
-        }
-        #upload {
-          display: none;
-          position: absolute;
-          z-index: -1;
-        }
         >textarea{
           display: block;
           width: 100%;
@@ -479,8 +362,17 @@
       }
     }
     >div.socialsContact{
-      margin-top: 70px;
-      >h1{
+      margin-top: 45px;
+      >div.formBg{
+        position: absolute;
+        z-index: -10;
+        width: 100%;
+        height: 440px;
+        bottom: 125px;
+        background: url("../../Icons/Form/bgsvg.svg") no-repeat center center;
+        background-size: cover;
+      }
+      >h4{
         text-transform: capitalize;
         font-size:36px ;
         margin-bottom: 15px;
@@ -493,10 +385,10 @@
         justify-content: center;
         >a{
           display: block;
-          width: 50px;
-          height: 50px;
+          width: 45px;
+          height: 45px;
           margin: 0 12.5px;
-          >img{
+          >svg{
             width: 100%;
             height: 100%;
           }
@@ -506,7 +398,7 @@
   }
   div.location{
     width: 100%;
-    height: 300px;
+    height: 350px;
     >iframe{
       width: 100%;
       height: 100%;
@@ -526,7 +418,8 @@
     font-family: yekan_bakh_medium;
     > h4 {
       text-align: center;
-      font-size: 20px;
+      font-size: 16px;
+      font-family: yekan_bakh_bold;
     }
     >div.itemForm{
       margin:30px auto;
@@ -557,43 +450,6 @@
           color: #0E0E0E;
           padding: 0;
         }
-        label {
-          padding-top: 12px;
-          padding-right: 10px;
-          display: block;
-          cursor: pointer;
-          color: #4F4F4F;
-          margin-bottom: 20px;
-          height: 126px;
-          text-align: right;
-          position: relative;
-          font-family: yekan_bakh_regular;
-          border: 3px solid #AE8649;
-          >div.label{
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            border-radius: 10px;
-            z-index: 10;
-            right: 10px;
-            top: 10px;
-            >img{
-              width: 100%;
-              height: 100%;
-            }
-            >svg{
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%,-50%);
-            }
-          }
-        }
-        #upload {
-          display: none;
-          position: absolute;
-          z-index: -1;
-        }
         >textarea{
           display: block;
           width: 100%;
@@ -610,8 +466,17 @@
       }
     }
     >div.socialsContact{
-      margin-top: 70px;
-      >h1{
+      margin-top: 35px;
+      >div.formBg{
+        position: absolute;
+        z-index: -10;
+        width: 100%;
+        height: 440px;
+        bottom: 150px;
+        background: url("../../Icons/Form/bgsvg.svg") no-repeat center center;
+        background-size: cover;
+      }
+      >h4{
         text-align: center;
         text-transform: capitalize;
         font-size:32px ;
@@ -625,10 +490,10 @@
         justify-content: center;
         >a{
           display: block;
-          width: 30px;
-          height: 30px;
+          width: 40px;
+          height: 40px;
           margin: 0 15px;
-          >img{
+          >svg{
             width: 100%;
             height: 100%;
           }
@@ -638,7 +503,7 @@
   }
   div.location{
     width: 100%;
-    height: 225px;
+    height: 350px;
     >iframe{
       width: 100%;
       height: 100%;

@@ -16,8 +16,6 @@ img.imageBefore{
   position: absolute;
   inset: 0;
   width: var(--position);
-  filter: brightness(75%);
-  -webkit-filter: grayscale(100%);
 }
 input.sliderRange{
   direction: ltr;
@@ -94,6 +92,37 @@ div.sliderButton{
     direction: ltr;
     width: 100%;
     height: calc(100vh - 150px);
+    position: relative;
+    >span.after{
+      width: auto;
+      height: auto;
+      display: inline-block;
+      background-color: #1D1D1D;
+      position: absolute;
+      z-index: 1000000;
+      top: 0;
+      right: 0;
+      color: white;
+      text-transform: capitalize;
+      padding:7.5px 10px;
+      font-size: 24px;
+      font-family: "futura medium bt";
+    }
+    >span.before{
+      width: auto;
+      height: auto;
+      display: inline-block;
+      background-color: #1D1D1D;
+      position: absolute;
+      z-index: 1000000;
+      top: 0;
+      left: 0;
+      color: white;
+      text-transform: capitalize;
+      padding:7.5px 10px;
+      font-size: 24px;
+      font-family: "futura medium bt";
+    }
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px){
@@ -143,6 +172,36 @@ div.sliderButton{
     direction: ltr;
     width: 100%;
     height: calc(100vh - 150px);
+    >span.after{
+      width: auto;
+      height: auto;
+      display: inline-block;
+      background-color: #1D1D1D;
+      position: absolute;
+      z-index: 1000000;
+      top: 0;
+      right: 0;
+      color: white;
+      text-transform: capitalize;
+      padding:7.5px 10px;
+      font-size: 22px;
+      font-family: "futura medium bt";
+    }
+    >span.before{
+      width: auto;
+      height: auto;
+      display: inline-block;
+      background-color: #1D1D1D;
+      position: absolute;
+      z-index: 1000000;
+      top: 0;
+      left: 0;
+      color: white;
+      text-transform: capitalize;
+      padding:7.5px 10px;
+      font-size: 22px;
+      font-family: "futura medium bt";
+    }
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
@@ -192,6 +251,36 @@ div.sliderButton{
     direction: ltr;
     width: 100%;
     height: calc(100vh - 150px);
+    >span.after{
+      width: auto;
+      height: auto;
+      display: inline-block;
+      background-color: #1D1D1D;
+      position: absolute;
+      z-index: 1000000;
+      top: 0;
+      right: 0;
+      color: white;
+      text-transform: capitalize;
+      padding:7.5px 10px;
+      font-size: 20px;
+      font-family: "futura medium bt";
+    }
+    >span.before{
+      width: auto;
+      height: auto;
+      display: inline-block;
+      background-color: #1D1D1D;
+      position: absolute;
+      z-index: 1000000;
+      top: 0;
+      left: 0;
+      color: white;
+      text-transform: capitalize;
+      padding:7.5px 10px;
+      font-size: 20px;
+      font-family: "futura medium bt";
+    }
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px){
@@ -242,6 +331,36 @@ div.sliderButton{
     direction: ltr;
     width: 100%;
     height: 400px;
+    >span.after{
+      width: auto;
+      height: auto;
+      display: inline-block;
+      background-color: #1D1D1D;
+      position: absolute;
+      z-index: 1000000;
+      top: 0;
+      right: 0;
+      color: white;
+      text-transform: capitalize;
+      padding:7.5px;
+      font-size: 18px;
+      font-family: "futura medium bt";
+    }
+    >span.before{
+      width: auto;
+      height: auto;
+      display: inline-block;
+      background-color: #1D1D1D;
+      position: absolute;
+      z-index: 1000000;
+      top: 0;
+      left: 0;
+      color: white;
+      text-transform: capitalize;
+      padding:7.5px;
+      font-size: 18px;
+      font-family: "futura medium bt";
+    }
   }
 }
 @media only screen and (max-width: 576px){
@@ -293,5 +412,35 @@ div.sliderButton{
     direction: ltr;
     width: 100%;
     height: 360px;
+    >span.after{
+      width: auto;
+      height: auto;
+      display: inline-block;
+      background-color: #1D1D1D;
+      position: absolute;
+      z-index: 1000000;
+      top: 0;
+      right: 0;
+      color: white;
+      text-transform: capitalize;
+      padding:7.5px;
+      font-size: 16px;
+      font-family: "futura medium bt";
+    }
+    >span.before{
+      width: auto;
+      height: auto;
+      display: inline-block;
+      background-color: #1D1D1D;
+      position: absolute;
+      z-index: 1000000;
+      top: 0;
+      left: 0;
+      color: white;
+      text-transform: capitalize;
+      padding:7.5px;
+      font-size: 16px;
+      font-family: "futura medium bt";
+    }
   }
 }

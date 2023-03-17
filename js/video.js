@@ -10,11 +10,7 @@ const controls=document.querySelector("div.controls")
 const currentTime=document.getElementById("currentTime")
 const totalTime=document.getElementById("ToTalTime")
 const volumeRange=document.getElementById("volumeRange")
-// const rangeVolume=document.getElementById("rangeVolume")
-// // video.volume=rangeVolume.value/100
-// rangeVolume.addEventListener("change",(e)=>{
-//     video.volume=e.target.value/100
-// })
+const volumeIcon=document.querySelector("div.volumeIcon")
 document.write(video.volume)
 controls.style.width=video.style.width
 video.addEventListener("timeupdate", () => {
@@ -54,14 +50,12 @@ const play = (e) => {
         video.play()
     }
     else{
-
         playVideo.setAttribute("display","block")
         pauseVideo.setAttribute("display","none")
-
-
         video.pause()
     }
 }
+video.addEventListener("click",play)
 const fullScreen = (e) => {
     e.preventDefault()
     video.requestFullscreen()
@@ -89,4 +83,9 @@ volumeRange.addEventListener('input', function() {
 
 volumeRange.addEventListener("change",function (e){
     video.volume=e.currentTarget.value /100
+})
+volumeIcon.addEventListener("click",function (){
+    volumeRange.style.background="#fff"
+    volumeRange.value=0
+    video.volume=0
 })

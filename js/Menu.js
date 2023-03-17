@@ -11,6 +11,10 @@ const navMb=document.querySelector("nav.mb")
 const close=document.getElementById("close")
 const closeEn=document.getElementById("closeEn")
 const lgeMb=document.getElementById("lgeMb")
+const main=document.querySelector("section.main")
+let clickCoverW="";
+let clickCoverH="";
+let clickCoverP="";
 function toggleDark() {
     if (html.classList.contains('dark')) {
         html.classList.remove('dark');
@@ -32,6 +36,14 @@ pjs.addEventListener("click",function (){
     this.classList.toggle("activeQuestionDi")
     subPj.classList.add("activeAnimation")
     subPj.classList.toggle("activeSub")
+    clickCoverP=document.createElement("div")
+    clickCoverP.setAttribute("class","clickCoverP")
+    main.prepend(clickCoverP)
+    clickCoverP.addEventListener("click",function (){
+        main.removeChild(clickCoverP)
+        subPj.classList.remove("activeSub")
+        pjs.classList.remove("activeQuestionDi")
+    })
 })
 lgeMb.addEventListener("click",function (){
     this.classList.toggle("activeQuestionDi")
@@ -39,19 +51,29 @@ lgeMb.addEventListener("click",function (){
     subPjMb.classList.toggle("activeSub")
 })
 world.addEventListener("click",function () {
-    lge.classList.add("activeAnimation")
     lge.classList.toggle("activeSub")
+    lge.classList.toggle("activeAnimation")
+    clickCoverW=document.createElement("div")
+    clickCoverW.setAttribute("class","clickCoverW")
+    main.prepend(clickCoverW)
+    clickCoverW.addEventListener("click",function (){
+        main.removeChild(clickCoverW)
+        lge.classList.remove("activeSub")
+    })
 })
 hamburger.addEventListener("click",function (){
     navMb.classList.add("activeNavMbFa")
-})
-hamburger.addEventListener("click",function (){
     navMb.classList.add("activeNavMbEn")
+    clickCoverH=document.createElement("div")
+    clickCoverH.setAttribute("class","clickCoverH")
+    main.prepend(clickCoverH)
+    clickCoverH.addEventListener("click",function (){
+        main.removeChild(clickCoverH)
+        navMb.classList.remove("activeNavMbEn")
+        navMb.classList.remove("activeNavMbFa")
+    })
 })
 close.addEventListener("click",function (){
     navMb.classList.remove("activeNavMbEn")
-})
-close.addEventListener("click",function (){
     navMb.classList.remove("activeNavMbFa")
 })
-

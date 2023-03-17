@@ -20,9 +20,6 @@
         display: flex;
         margin-bottom: 40px;
         flex-flow: row wrap;
-        &:nth-of-type(1){
-          width: 100%;
-        }
         >div.iconInfo{
           width: 40px;
           height: 40px;
@@ -37,7 +34,7 @@
           padding-right: 25px;
           display: flex;
           align-items: center;
-          >h1{
+          >h5{
             font-size: 30px;
             font-family: yekan_bakh_medium;
           }
@@ -59,6 +56,7 @@
         width: calc(100%  - 40px);
         padding-right: 25px;
         >p{
+          width: 100%;
           font-size: 26px;
           text-align: justify;
           font-family: yekan_bakh_regular;
@@ -72,118 +70,17 @@
     }
   }
   div.videoProject{
+    padding: 50px 0;
+    margin: 50px auto;
     width: 100%;
     height: auto;
-    padding: 50px 0 0 0;
-    position: relative;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    >div.video{
-      width: auto;
+    >div{
+      margin: 0 auto;
+      width: 80%;
       height: auto;
-      //position: relative;
-      display: flex;
-      justify-content: center;
-      background-color: transparent;
-      >div.container {
-        text-align: center;
-        position: relative;
-        display: flex;
-        max-width: max-content ;
-        height:auto;
-        justify-content: center;
-        align-items: center;
-        direction: ltr;
-        >.controls {
-          position: absolute;
-          height: 100px;
-          width:100%;
-          display: flex;
-          justify-content: space-around;
-          opacity: 0;
-          transition: opacity 0.4s;
-          padding: 0  7.5px;
-          background-color: rgba(64, 64, 64, 0.58);
-          bottom: 0;
-          >div.rangeContainer{
-            margin:  0 25px ;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            >input#volumeRange{
-              background: #1D1D1D;
-              border: solid 2px #F1F1F2;
-              border-radius: 8px;
-              height: 7px;
-              width:150px;
-              outline: none;
-              transition: background 450ms ease-in;
-              -webkit-appearance: none;
-            }
-            #volumeRange::-webkit-slider-thumb {
-              width: 20px;
-              height: 20px;
-              border-radius: 50%;
-              -webkit-appearance: none;
-              background: #AE8649;
-            }
-          }
-          >span{
-            display: block;
-            height: 100%;
-            line-height: 100px;
-            color:#FFFFFF;
-            font-size: 14px;
-            font-weight: 700;
-            font-family: "Roboto Light";
-          }
-          >.timeline {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            border: none;
-            margin: 0  10px;
-            >.bar{
-              background:#ccc;
-              height: 4px;
-              flex: 1;
-              >.inner{
-                background: #AE8649;
-                width: 0;
-                height: 100%;
-              }
-            }
-          }
-          >button.videoBtn {
-            margin: 0 10px;
-            background-color: transparent !important;
-            border: none !important;
-          }
-        }
-        &:hover{
-          >.controls{
-            opacity: 1;
-          }
-        }
-      }
-      #video {
-        width: 100%;
-        height: auto;
-      }
-      .fa {
-        font-size: 20px;
-      }
-      .vBlock{
-        display: block !important;
-      }
-      .vNone{
-        display: none !important;
-      }
     }
   }
   div.lastProjects{
-    margin-top: 50px;
     padding: 50px 5% 100px 5%;
     >h1{
       text-align: right;
@@ -193,32 +90,48 @@
     }
     div.lpItems{
       width: 100%;
-      height:470px;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       flex-flow: row wrap;
       >div{
         width: 31%;
-        height: 100%;
+        height:470px;
         margin: 10px;
         position: relative;
+        overflow: hidden;
+        >a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 100;
+          top: 0;
+          left: 0;
+        }
+        &:hover{
+          >img{
+            transform: scale(1.25,1.25);
+          }
+          >div.cover{
+            opacity: 100;
+          }
+        }
         >img{
           width: 100%;
           height: 100%;
           object-fit: cover;
+          transition: all 300ms linear;
         }
         >div.cover{
           position: absolute;
           width: 100%;
           height: 100%;
           z-index: 10;
-          background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1));
           top: 0;
           left: 0;
           transition: all 300ms linear;
-          &:hover{
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-          }
+          opacity: 0;
           >a{
             width: 100%;
             display: block;
@@ -258,14 +171,12 @@
         display: flex;
         margin-bottom: 30px;
         flex-flow: row wrap;
-        &:nth-of-type(1){
-          width: 100%;
-        }
         >div.iconInfo{
           width: 35px;
           height: 35px;
           >svg{
-            transform: scale(0.5,0.5) ;
+            width: 100% ;
+            height: 100%;
           }
         }
         >div.textInfo{
@@ -274,7 +185,7 @@
           padding-right: 15px;
           display: flex;
           align-items: center;
-          >h1{
+          >h5{
             font-size: 26px;
             font-family: yekan_bakh_medium;
           }
@@ -296,6 +207,7 @@
         width: calc(100%  - 35px);
         padding-right: 15px;
         >p{
+          width: 100%;
           font-size: 22px;
           text-align: justify;
           font-family: yekan_bakh_regular;
@@ -308,145 +220,18 @@
     }
   }
   div.videoProject{
+    padding: 50px 0;
+    margin: 50px auto;
     width: 100%;
     height: auto;
-    padding: 50px 0;
-    position: relative;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    >div.video{
-      width: auto;
+    >div{
+      margin: 0 auto;
+      width: 85%;
       height: auto;
-      //position: relative;
-      display: flex;
-      justify-content: center;
-      background-color: transparent;
-      >div.container {
-        text-align: center;
-        position: relative;
-        display: flex;
-        max-width: max-content ;
-        height:auto;
-        justify-content: center;
-        align-items: center;
-        direction: ltr;
-        >div.rangeContainer{
-          margin:  0 20px ;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          >input#volumeRange{
-            background: #1D1D1D;
-            border: solid 2px #F1F1F2;
-            border-radius: 8px;
-            height: 7px;
-            width:125px;
-            outline: none;
-            transition: background 450ms ease-in;
-            -webkit-appearance: none;
-          }
-          #volumeRange::-webkit-slider-thumb {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            -webkit-appearance: none;
-            background: #AE8649;
-          }
-        }
-        >.controls {
-          position: absolute;
-          height: 80px;
-          width:100%;
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          opacity: 0;
-          transition: opacity 0.4s;
-          padding: 0  10px;
-          background-color: rgba(64, 64, 64, 0.58);
-          bottom: 0;
-          >button{
-            display: flex;
-            align-items: center;
-          }
-          svg{
-            display: block;
-          }
-          svg#pause{
-            display: none;
-          }
-          svg#play{
-            width: 50px;
-            height: 50px;
-          }
-          svg#forward,svg#rewind{
-            width: 32.5px;
-            height: 32.5px;
-          }
-          svg#download{
-            width: 22.5px;
-            height: 22.5px;
-          }
-          svg#fullScreen{
-            width:27.5px;
-            height: 27.5px;
-          }
-          >span{
-            display: block;
-            height: 100%;
-            line-height:80px;
-            color:#FFFFFF;
-            font-size: 18px;
-            font-weight: 700;
-            font-family: "Roboto Light";
-          }
-          >.timeline {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            border: none;
-            margin: 0  12.5px;
-            >.bar{
-              background:#ccc;
-              height: 4px;
-              flex: 1;
-              >.inner{
-                background: #AE8649;
-                width: 0;
-                height: 100%;
-              }
-            }
-          }
-          >button.videoBtn {
-            margin: 0 12.5px;
-            background-color: transparent !important;
-            border: none !important;
-          }
-        }
-        &:hover{
-          >.controls{
-            opacity: 1;
-          }
-        }
-      }
-      #video {
-        width: 100%;
-        height: auto;
-      }
-      .fa {
-        font-size: 20px;
-      }
-      .vBlock{
-        display: block !important;
-      }
-      .vNone{
-        display: none !important;
-      }
     }
   }
   div.lastProjects{
-    padding: 50px 5% 100px 5%;
+    padding: 50px 5% 80px 5%;
     >h1{
       text-align: right;
       font-size: 36px;
@@ -455,19 +240,37 @@
     }
     div.lpItems{
       width: 100%;
-      height:300px;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       flex-flow: row wrap;
       >div{
         width: 30%;
-        height: 100%;
+        height:375px;
         margin: 10px;
         position: relative;
+        overflow: hidden;
+        >a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 100;
+          top: 0;
+          left: 0;
+        }
+        &:hover{
+          >img{
+            transform: scale(1.25,1.25);
+          }
+          >div.cover{
+            opacity: 100;
+          }
+        }
         >img{
           width: 100%;
           height: 100%;
           object-fit: cover;
+          transition: all 300ms linear;
         }
         >div.cover{
           position: absolute;
@@ -478,6 +281,7 @@
           top: 0;
           left: 0;
           transition: all 300ms linear;
+          opacity: 0;
           &:hover{
             background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
           }
@@ -520,9 +324,6 @@
         display: flex;
         margin-bottom:20px;
         flex-flow: row wrap;
-        &:nth-of-type(1){
-          width: 100%;
-        }
         >div.iconInfo{
           width: 30px;
           height: 30px;
@@ -537,7 +338,7 @@
           padding-right: 10px;
           display: flex;
           align-items: center;
-          >h1{
+          >h5{
             font-size: 24px;
             font-family: yekan_bakh_medium;
           }
@@ -559,6 +360,7 @@
         width: calc(100%  - 30px);
         padding-right: 10px;
         >p{
+          width: 100%;
           font-size: 20px;
           text-align: justify;
           font-family: yekan_bakh_regular;
@@ -571,145 +373,18 @@
     }
   }
   div.videoProject{
+    padding: 40px 0;
+    margin: 45px auto;
     width: 100%;
     height: auto;
-    padding: 50px 0;
-    position: relative;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    >div.video{
-      width: auto;
+    >div{
+      margin: 0 auto;
+      width: 85%;
       height: auto;
-      //position: relative;
-      display: flex;
-      justify-content: center;
-      background-color: transparent;
-      >div.container {
-        text-align: center;
-        position: relative;
-        display: flex;
-        max-width: max-content ;
-        height:auto;
-        justify-content: center;
-        align-items: center;
-        direction: ltr;
-        >.controls {
-          position: absolute;
-          height: 60px;
-          width:100%;
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          opacity: 0;
-          transition: opacity 0.4s;
-          padding: 0  7.5px;
-          background-color: rgba(64, 64, 64, 0.58);
-          bottom: 0;
-          >div.rangeContainer{
-            margin:  0 15px ;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            >input#volumeRange{
-              background: #1D1D1D;
-              border: solid 2px #F1F1F2;
-              border-radius: 8px;
-              height: 7px;
-              width:100px;
-              outline: none;
-              transition: background 450ms ease-in;
-              -webkit-appearance: none;
-            }
-            #volumeRange::-webkit-slider-thumb {
-              width: 20px;
-              height: 20px;
-              border-radius: 50%;
-              -webkit-appearance: none;
-              background: #AE8649;
-            }
-          }
-          >button{
-            display: flex;
-            align-items: center;
-          }
-          svg{
-            display: block;
-          }
-          svg#pause{
-            display: none;
-          }
-          svg#play{
-            width: 40px;
-            height: 40px;
-          }
-          svg#forward,svg#rewind{
-            width: 27.5px;
-            height: 27.5px;
-          }
-          svg#download{
-            width: 17.5px;
-            height: 17.5px;
-          }
-          svg#fullScreen{
-            width:22.5px;
-            height: 22.5px;
-          }
-          >span{
-            display: block;
-            height: 100%;
-            line-height:60px;
-            color:#FFFFFF;
-            font-size: 16px;
-            font-weight: 700;
-            font-family: "Roboto Light";
-          }
-          >.timeline {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            border: none;
-            margin: 0  12.5px;
-            >.bar{
-              background:#ccc;
-              height: 4px;
-              flex: 1;
-              >.inner{
-                background: #AE8649;
-                width: 0;
-                height: 100%;
-              }
-            }
-          }
-          >button.videoBtn {
-            margin: 0 12.5px;
-            background-color: transparent !important;
-            border: none !important;
-          }
-        }
-        &:hover{
-          >.controls{
-            opacity: 1;
-          }
-        }
-      }
-      #video {
-        width: 100%;
-        height: auto;
-      }
-      .fa {
-        font-size: 20px;
-      }
-      .vBlock{
-        display: block !important;
-      }
-      .vNone{
-        display: none !important;
-      }
     }
   }
   div.lastProjects{
-    padding: 50px 5% 100px 5%;
+    padding: 40px 5% 75px 5%;
     >h1{
       text-align: right;
       font-size: 36px;
@@ -724,13 +399,32 @@
       flex-flow: row wrap;
       >div{
         width: 40%;
-        height: 350px;
+        height:375px;
         margin: 15px;
         position: relative;
+        overflow: hidden;
+        >a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 100;
+          top: 0;
+          left: 0;
+        }
+        &:hover{
+          >img{
+            transform: scale(1.25,1.25);
+          }
+          >div.cover{
+            opacity: 100;
+          }
+        }
         >img{
           width: 100%;
           height: 100%;
           object-fit: cover;
+          transition: all 300ms linear;
         }
         >div.cover{
           position: absolute;
@@ -741,6 +435,7 @@
           top: 0;
           left: 0;
           transition: all 300ms linear;
+          opacity: 0;
           &:hover{
             background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
           }
@@ -800,7 +495,7 @@
           padding-right: 10px;
           display: flex;
           align-items: center;
-          >h1{
+          >h5{
             font-size: 22px;
             font-family: yekan_bakh_medium;
           }
@@ -822,6 +517,7 @@
         width: calc(100%  - 25px);
         padding-right: 10px;
         >p{
+          width: 100%;
           font-size: 18px;
           text-align: justify;
           font-family: yekan_bakh_regular;
@@ -834,145 +530,18 @@
     }
   }
   div.videoProject{
+    padding: 25px 0;
+    margin: 40px auto;
     width: 100%;
     height: auto;
-    padding: 50px 0;
-    position: relative;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    >div.video{
-      width: auto;
+    >div{
+      margin: 0 auto;
+      width: 90%;
       height: auto;
-      //position: relative;
-      display: flex;
-      justify-content: center;
-      background-color: transparent;
-      >div.container {
-        text-align: center;
-        position: relative;
-        display: flex;
-        max-width: max-content ;
-        height:auto;
-        justify-content: center;
-        align-items: center;
-        direction: ltr;
-        >.controls {
-          position: absolute;
-          height: 50px;
-          width:100%;
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          opacity: 0;
-          transition: opacity 0.4s;
-          padding: 0  7.5px;
-          background-color: rgba(64, 64, 64, 0.58);
-          bottom: 0;
-          >div.rangeContainer{
-            margin:  0 10px ;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            >input#volumeRange{
-              background: #1D1D1D;
-              border: solid 2px #F1F1F2;
-              border-radius: 8px;
-              height: 7px;
-              width:75px;
-              outline: none;
-              transition: background 450ms ease-in;
-              -webkit-appearance: none;
-            }
-            #volumeRange::-webkit-slider-thumb {
-              width: 20px;
-              height: 20px;
-              border-radius: 50%;
-              -webkit-appearance: none;
-              background: #AE8649;
-            }
-          }
-          >button{
-            display: flex;
-            align-items: center;
-          }
-          svg{
-            display: block;
-          }
-          svg#pause{
-            display: none;
-          }
-          svg#play{
-            width: 40px;
-            height: 40px;
-          }
-          svg#forward,svg#rewind{
-            width: 27.5px;
-            height: 27.5px;
-          }
-          svg#download{
-            width: 17.5px;
-            height: 17.5px;
-          }
-          svg#fullScreen{
-            width:22.5px;
-            height: 22.5px;
-          }
-          >span{
-            display: block;
-            height: 100%;
-            line-height:50px;
-            color:#FFFFFF;
-            font-size: 14px;
-            font-weight: 700;
-            font-family: "Roboto Light";
-          }
-          >.timeline {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            border: none;
-            margin: 0  7.5px;
-            >.bar{
-              background:#ccc;
-              height: 4px;
-              flex: 1;
-              >.inner{
-                background: #AE8649;
-                width: 0;
-                height: 100%;
-              }
-            }
-          }
-          >button.videoBtn {
-            margin: 0 10px;
-            background-color: transparent !important;
-            border: none !important;
-          }
-        }
-        &:hover{
-          >.controls{
-            opacity: 1;
-          }
-        }
-      }
-      #video {
-        width: 100%;
-        height: auto;
-      }
-      .fa {
-        font-size: 20px;
-      }
-      .vBlock{
-        display: block !important;
-      }
-      .vNone{
-        display: none !important;
-      }
     }
   }
   div.lastProjects{
-    padding: 50px 5% 100px 5%;
+    padding: 30px 5% 45px 5%;
     >h1{
       text-align: right;
       font-size: 30px;
@@ -986,14 +555,33 @@
       justify-content: center;
       flex-flow: row wrap;
       >div{
-        width: 55%;
-        height: 350px;
-        margin: 10px 0;
+        width: 40%;
+        height:300px;
+        margin: 10px;
         position: relative;
+        overflow: hidden;
+        >a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 100;
+          top: 0;
+          left: 0;
+        }
+        &:hover{
+          >img{
+            transform: scale(1.25,1.25);
+          }
+          >div.cover{
+            opacity: 100;
+          }
+        }
         >img{
           width: 100%;
           height: 100%;
           object-fit: cover;
+          transition: all 300ms linear;
         }
         >div.cover{
           position: absolute;
@@ -1004,6 +592,7 @@
           top: 0;
           left: 0;
           transition: all 300ms linear;
+          opacity: 0;
           &:hover{
             background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
           }
@@ -1062,7 +651,7 @@
           padding-right: 10px;
           display: flex;
           align-items: center;
-          >h1{
+          >h5{
             font-size: 18px;
             font-family: yekan_bakh_medium;
           }
@@ -1084,6 +673,7 @@
         width: calc(100%  - 25px);
         padding-right: 10px;
         >p{
+          width: 100%;
           font-size: 14px;
           text-align: justify;
           font-family: yekan_bakh_regular;
@@ -1096,145 +686,16 @@
     }
   }
   div.videoProject{
+    margin: 25px 0;
     width: 100%;
     height: auto;
-    padding: 50px 0;
-    position: relative;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    >div.video{
-      width: auto;
+    >div{
+      width: 100%;
       height: auto;
-      //position: relative;
-      display: flex;
-      justify-content: center;
-      background-color: transparent;
-      >div.container {
-        text-align: center;
-        position: relative;
-        display: flex;
-        max-width: max-content ;
-        height:auto;
-        justify-content: center;
-        align-items: center;
-        direction: ltr;
-        >.controls {
-          position: absolute;
-          height: 40px;
-          width:100%;
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          opacity: 0;
-          transition: opacity 0.4s;
-          padding: 0  7.5px;
-          background-color: rgba(64, 64, 64, 0.58);
-          bottom: 0;
-          >div.rangeContainer{
-            margin:  0 7.5px ;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            >input#volumeRange{
-              background: #1D1D1D;
-              border: solid 2px #F1F1F2;
-              border-radius: 8px;
-              height: 7px;
-              width:75px;
-              outline: none;
-              transition: background 450ms ease-in;
-              -webkit-appearance: none;
-            }
-            #volumeRange::-webkit-slider-thumb {
-              width: 20px;
-              height: 20px;
-              border-radius: 50%;
-              -webkit-appearance: none;
-              background: #AE8649;
-            }
-          }
-          >button{
-            display: flex;
-            align-items: center;
-          }
-          svg{
-            display: block;
-          }
-          svg#pause{
-            display: none;
-          }
-          svg#play{
-            width: 35px;
-            height: 35px;
-          }
-          svg#forward,svg#rewind{
-            width: 25px;
-            height: 25px;
-          }
-          svg#download{
-            width: 15px;
-            height: 15px;
-          }
-          svg#fullScreen{
-            width:20px;
-            height: 20px;
-          }
-          >span{
-            display: block;
-            height: 100%;
-            line-height:40px;
-            color:#FFFFFF;
-            font-size: 12px;
-            font-weight: 700;
-            font-family: "Roboto Light";
-          }
-          >.timeline {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            border: none;
-            margin: 0  7.5px;
-            >.bar{
-              background:#ccc;
-              height: 4px;
-              flex: 1;
-              >.inner{
-                background: #AE8649;
-                width: 0;
-                height: 100%;
-              }
-            }
-          }
-          >button.videoBtn {
-            margin: 0 7.5px;
-            background-color: transparent !important;
-            border: none !important;
-          }
-        }
-        &:hover{
-          >.controls{
-            opacity: 1;
-          }
-        }
-      }
-      #video {
-        width: 100%;
-        height: auto;
-      }
-      .fa {
-        font-size: 20px;
-      }
-      .vBlock{
-        display: block !important;
-      }
-      .vNone{
-        display: none !important;
-      }
     }
   }
   div.lastProjects{
-    padding: 50px 5% 100px 5%;
+    padding: 25px 5% 25px 5%;
     >h1{
       text-align: right;
       font-size: 30px;
@@ -1248,14 +709,33 @@
       justify-content: center;
       flex-flow: row wrap;
       >div{
-        width: 85%;
-        height: 400px;
-        margin: 10px 0;
+        width: 40%;
+        height:200px;
+        margin: 10px;
         position: relative;
+        overflow: hidden;
+        >a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 100;
+          top: 0;
+          left: 0;
+        }
+        &:hover{
+          >img{
+            transform: scale(1.25,1.25);
+          }
+          >div.cover{
+            opacity: 100;
+          }
+        }
         >img{
           width: 100%;
           height: 100%;
           object-fit: cover;
+          transition: all 300ms linear;
         }
         >div.cover{
           position: absolute;
@@ -1266,6 +746,7 @@
           top: 0;
           left: 0;
           transition: all 300ms linear;
+          opacity: 0;
           &:hover{
             background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
           }

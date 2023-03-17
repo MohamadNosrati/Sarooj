@@ -9,10 +9,10 @@
         background: linear-gradient(to top, rgba(182, 145, 90, 0.45) -10.23%, rgba(192, 160, 112, 0) 44.36%);
     }
     .projectsLightBg{
-        background: linear-gradient(to top, #B6915A 0%, rgba(188, 154, 102, 0.79) 4.84%, rgba(190, 156, 107, 0.56) 6.83%, rgba(192, 160, 112, 0) 10.05%);
+        background: linear-gradient(to top, #B6915A -10.23%, rgba(192, 160, 112, 0) 44.36%);
     }
     .projectsDarkBg{
-        background: linear-gradient(to top, rgba(182, 145, 90, 0.45) 0%, rgba(188, 154, 102, 0.17) 4.84%, rgba(190, 156, 107, 0.0940177) 6.83%, rgba(192, 160, 112, 0) 10.05%);
+        background: linear-gradient(to top, rgba(182, 145, 90, 0.45) -10.23%, rgba(192, 160, 112, 0) 44.36%);
     }
     .bfLightBg{
         background: linear-gradient(180deg, #B6915A 0%, rgba(192, 160, 112, 0) 87.29%);
